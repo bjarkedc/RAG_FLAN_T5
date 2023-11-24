@@ -1,2 +1,2 @@
-# ANLP_Exam_Project
-ANLP exam project repository
+# RAG FLAN-T5 project
+Project repository
