@@ -561,6 +561,7 @@ def train():
     training_args.learning_rate = run.config.learning_rate
     training_args.num_train_epochs = run.config.num_train_epochs
     training_args.per_device_train_batch_size = run.config.per_device_train_batch_size
+    training_args.output_dir = training_args.output_dir + f"_{run.id}"
 
     accelerator = Accelerator()
 
