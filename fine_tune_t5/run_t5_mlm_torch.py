@@ -935,6 +935,7 @@ def train():
                     perplexity = float("inf")
 
                 logger.info(f"step {step}: perplexity: {perplexity}")
+                wandb.log({"perplexity": perplexity})
 
         model.eval()
         losses = []
