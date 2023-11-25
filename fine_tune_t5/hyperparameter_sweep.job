@@ -9,4 +9,4 @@
 #SBATCH --mail-type=BEGIN,FAIL,END
 module load singularity
 
-singularity exec --nv /opt/itu/containers/pytorch/latest python -m accelerate.commands.launch fine_tune_t5/run_t5_mlm_torch.py --train_file wookipedia/starwarsfandomcom-20200223.txt.cleaned.tok.uniq.txt --output_dir flant5-base-starwars --validation_split_percentage 1 --model_name_or_path google/flan-t5-base --max_seq_length 512 --eval_steps 200
+singularity exec --nv /opt/itu/containers/pytorch/latest python -m accelerate.commands.launch --config_file fine_tune_t5/accelerate_config.yaml fine_tune_t5/run_t5_mlm_torch.py --train_file wookipedia/starwarsfandomcom-20200223.txt.cleaned.tok.uniq.txt --output_dir flant5-base-starwars --validation_split_percentage 1 --model_name_or_path google/flan-t5-base --max_seq_length 512 --eval_steps 200
