@@ -61,11 +61,11 @@ sweep_config = {
             'max': 1e-2
         },
         'num_train_epochs': {
-            'min': 1,
-            'max': 5
+            'min': 2,
+            'max': 4
         },
         'per_device_train_batch_size': {
-            'values': [1, 2, 4, 8, 16]
+            'values': [6, 8]
         }
     }
 }
