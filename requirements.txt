@@ -1,0 +1,7 @@
+datasets
+huggingface_hub
+torch
+accelerate
+transformers
+tqdm
+wandb
