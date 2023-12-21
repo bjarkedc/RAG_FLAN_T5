@@ -1,4 +1,4 @@
-# Retrieval Augmented Generation with FlanT5, BM25, and TF-IDF
+# Retrieval Augmented Generation with FlanT5, BM25
 
 ## Overview
 
